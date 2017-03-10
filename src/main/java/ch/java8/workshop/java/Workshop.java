@@ -5,8 +5,6 @@ import java.util.List;
 import java.util.Optional;
 
 public class Workshop {
-	
-	
 	static List<Employee> employees = Arrays.asList(new Employee(1, "Laura", Role.PM, new Address("Pfalzgasse 1, Zurich", "Switzerland")),
 													new Employee(2, "Julien", Role.DEV, new Address("Switzerland")),
 													new Employee(3, "David", Role.QA, null),
@@ -17,13 +15,10 @@ public class Workshop {
 												 new Salary(Role.QA, Double.valueOf(3000)));
 
 	public static void main(String[] args) {
-		
-		
 		displayEmployeePOJO(employees);
 		System.out.println("\n\n");
 		displayEmployeeJava8(employees);
 	}
-
 	
 	private static void displayEmployeePOJO(List<Employee> employees) {
 		Helper.showHeader();
