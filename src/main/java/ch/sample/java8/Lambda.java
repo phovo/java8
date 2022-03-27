@@ -24,5 +24,5 @@ public class Lambda {
 		Collections.sort(names, (o1, o2) -> o1.compareTo(o2));
 		
 		preValidator.negate().test("abc");
-	}
+	}//
 }
